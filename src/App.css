@@ -189,9 +189,9 @@ a.news-detail-link {
   color: black;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
   body {
-    font-size: 1.24em;
+    font-size: 1.2em;
   }
   .topnav {
     width: 180%;
