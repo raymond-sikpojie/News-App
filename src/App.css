@@ -142,10 +142,7 @@ body {
   background: rgba(0, 0, 0, 0.685);
   color: white;
   padding: 10px;
-  /* position: fixed; */
   width: 100vw;
-  /* top: 0;
-  left: 0; */
 }
 
 .title-container {
@@ -163,7 +160,6 @@ body {
 }
 
 .search-container {
-  /* display: flex; */
   margin-right: 20px;
 }
 
@@ -187,8 +183,14 @@ body {
   background: #ccc;
 }
 
+/* from NewsDetail component */
 a.news-detail-link {
-  /* from NewsDetail component */
   text-decoration: none;
   color: black;
+}
+
+@media (max-width: 800px) {
+  .topnav {
+    width: 180%;
+  }
 }
