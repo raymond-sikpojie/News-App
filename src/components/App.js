@@ -26,7 +26,7 @@ class App extends Component {
   componentDidMount() {
     // Getting the news data
     const proxy = "https://cors-anywhere.herokuapp.com/";
-    const api = `${proxy}http://newsapi.org/v2/top-headlines?country=us&apiKey=ad1db6960259412ab5e8326d56f6ac71`;
+    const api = `https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?country=us&apiKey=ad1db6960259412ab5e8326d56f6ac71`;
 
     fetch(api)
       .then((response) => response.json())
@@ -39,7 +39,7 @@ class App extends Component {
 
     // Getting the weather data
     const getWeather = (lat, lon) => {
-      const api = `${proxy}http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=da1c9acfac0a6440fe94733904919962`;
+      const api = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=da1c9acfac0a6440fe94733904919962`;
       fetch(api)
         .then((response) => {
           return response.json();
@@ -95,7 +95,7 @@ class App extends Component {
     if (this.state.searchTerm !== "") {
       // const api = `http://newsapi.org/v2/top-headlines?country=us&q=${this.state.searchTerm}&apiKey=ad1db6960259412ab5e8326d56f6ac71`;
       const proxy = "https://cors-anywhere.herokuapp.com/";
-      const api = `${proxy}http://newsapi.org/v2/everything?q=${this.state.searchTerm}&language=en&apiKey=ad1db6960259412ab5e8326d56f6ac71`;
+      const api = `https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/everything?q=${this.state.searchTerm}&language=en&apiKey=ad1db6960259412ab5e8326d56f6ac71`;
       fetch(api)
         .then((response) => response.json())
         .then((data) => {
