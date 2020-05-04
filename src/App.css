@@ -139,7 +139,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.685);
+  background: rgb(202, 16, 16);
   color: white;
   padding: 10px;
   width: 100vw;
@@ -169,10 +169,14 @@ body {
   border: none;
 }
 
+.search-container .text-field {
+  padding: 20px;
+}
+
 .button {
   padding: 6px 10px;
   margin-right: 16px;
-  background: rgb(199, 110, 110);
+  background: black;
   color: white;
   font-size: 17px;
   border: none;
@@ -194,7 +198,7 @@ a.news-detail-link {
     font-size: 1.2em;
   }
   .topnav {
-    width: 180%;
+    width: 190%;
     font-size: 1.6em;
     display: flex;
     flex-direction: column;
@@ -205,10 +209,16 @@ a.news-detail-link {
   .topnav input {
     font-size: 1.5em;
   }
+
+  .search-container .text-field {
+    padding: 20px;
+  }
+
   .button {
     font-size: 1.5em;
     margin: 10px;
-    width: 100px;
+    width: 150px;
+    padding: 20px;
   }
 
   .sidebar-content {

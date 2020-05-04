@@ -37,6 +37,7 @@ const NavBar = ({ value, searchBarChange, searchBarSubmit }) => {
             <div className="search-container">
               <form onSubmit={searchBarSubmit}>
                 <input
+                  className="text-field"
                   type="text"
                   placeholder="Search latest news"
                   value={value}
