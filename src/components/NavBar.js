@@ -19,7 +19,7 @@ const NavBar = ({ value, searchBarChange, searchBarSubmit }) => {
 
   return (
     <Consumer>
-      {context => (
+      {(context) => (
         <div>
           <div className="topnav">
             <div className="nav-links">
@@ -30,9 +30,7 @@ const NavBar = ({ value, searchBarChange, searchBarSubmit }) => {
               <a href="#contact">Contact</a> */}
               <div className="title-container">
                 <h2 className="heading">NEWS BREAKER</h2>
-                <p className="sub-heading">
-                  Breaking news from around the world
-                </p>
+                <p className="sub-heading">Latest news from around the world</p>
               </div>
             </div>
 
